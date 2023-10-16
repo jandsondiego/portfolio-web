@@ -1,0 +1,175 @@
+/* Estilo Geral*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #d8d6d4;
+    height: 100vh;
+    
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.flex{
+    display: flex;
+}
+
+/* Estilização do cabeçalho */
+header{
+    padding: 40px 4%;
+
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #696666;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+header a:hover{
+    color: #050505;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.foto-perfil img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+img{
+    border-radius: 100px;
+    width: 250px;
+    border: 0px solid black;
+    
+}
+
+/* Estilização do Sobre Mim */
+section.sobre{
+    padding: 40px 4%;
+
+}
+section.sobre.flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #050505;
+
+}
+.sobre .txt-sobre h2{
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.sobre .txt-sobre h2 span{
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+
+}
+.sobre .txt-sobre .btn-social button img{
+    width: 40px;
+    height: 40px;
+    border-radius: auto;
+    border: 0%;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 10px;
+
+}
+/* Estilização da Formação */
+section .formacao{
+    padding: 40px 35px;
+    margin: 40px;
+    text-align: justify;
+    
+}
+/* Estlização das experiencias */
+section .experiencias-profissionais{
+    padding: 50px 4%;
+    text-align: justify;
+    box-shadow: 0 0 40px 10px #ffffffcc;
+      
+}
+/* Estilização do formulario */
+section.formulario{
+    padding: 80px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+
+}
+form input, textarea{
+    width: 100%;
+    background-color: #6966667e;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #050505;
+    font-size: 15px;
+
+}
+form input::placeholder{
+    color: #050505;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px;
+    transform: scale(1.05);
+}
+ 
